@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natasya Aulia Rachma — Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- CUSTOM CURSOR -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- LOADING SCREEN -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-inner">
+            <div class="loading-monogram">N</div>
+            <div class="loading-bar-track">
+                <div class="loading-bar-fill" id="loadingBar"></div>
+            </div>
+            <p class="loading-text">Memuat portofolio…</p>
+        </div>
+    </div>
+
+    <!-- SCROLL PROGRESS BAR -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- FLOATING SHAPES BACKGROUND -->
+    <div class="bg-shapes" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+        <span class="shape shape-4"></span>
+        <span class="shape shape-5"></span>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">Natasya<span>.</span></a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link" data-section="hero">Beranda</a>
+                <a href="#about" class="nav-link" data-section="about">Tentang</a>
+                <a href="#education" class="nav-link" data-section="education">Pendidikan</a>
+                <a href="#org" class="nav-link" data-section="org">Organisasi</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skill</a>
+                <a href="#contact" class="nav-link" data-section="contact">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="hamburger" id="hamburger" aria-label="Buka menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1. HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-eyebrow">Selamat Datang</p>
+                <h1 class="hero-name gradient-text">Natasya Aulia Rachma</h1>
+                <p class="hero-subtitle">
+                    <span class="typing-static">Saya seorang&nbsp;</span>
+                    <span class="typing-cursor" id="typingText"></span>
+                </p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">Tentang Saya</a>
+                    <a href="#contact" class="btn btn-outline">Kontak Saya</a>
+                </div>
+            </div>
+
+            <div class="hero-orb orb-1" data-parallax="0.04"></div>
+            <div class="hero-orb orb-2" data-parallax="0.08"></div>
+            <div class="hero-orb orb-3" data-parallax="0.02"></div>
+
+            <a href="#about" class="scroll-hint" aria-label="Scroll ke bawah">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- 2. TENTANG SAYA -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Profil</span>
+                    <h2 class="section-title gradient-text">Tentang Saya</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-photo-wrap fade-in">
+                        <div class="photo-glow-ring"></div>
+                        <div class="photo-circle">
+                            <img src="foto.jpg" alt="Foto Natasya Aulia Rachma" />
+                        </div>
+                        <div class="photo-badge">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span>Mahasiswa D4</span>
+                        </div>
+                    </div>
+
+                    <div class="about-text fade-in">
+                        <p class="about-desc">
+                            Saya merupakan mahasiswa semester 2 Program Studi D4 Teknik Pengolahan Limbah di
+                            <strong>Politeknik Perkapalan Negeri Surabaya</strong> yang memiliki minat pada bidang
+                            engineering, teknologi proses, dan desain industri.
+                        </p>
+                        <p class="about-desc">
+                            Saya tertarik mempelajari pengembangan sistem industri yang efisien, berkelanjutan,
+                            dan ramah lingkungan. Selain fokus pada pengembangan kemampuan akademik dan teknis,
+                            saya juga memiliki komitmen untuk terus belajar, berkembang, serta membangun kemampuan
+                            profesional guna berkontribusi di dunia industri dan teknologi lingkungan di masa depan.
+                        </p>
+
+                        <div class="about-stats">
+                            <div class="stat-pill"><span>2025</span><small>Mulai Kuliah</small></div>
+                            <div class="stat-pill"><span>D4</span><small>Program Studi</small></div>
+                            <div class="stat-pill"><span>PPNS</span><small>Kampus</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PENDIDIKAN -->
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Riwayat</span>
+                    <h2 class="section-title gradient-text">Pendidikan</h2>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item fade-in">
+                        <div class="tl-icon"><i class="fa-solid fa-school"></i></div>
+                        <div class="tl-card">
+                            <span class="tl-year">2019 – 2022</span>
+                            <h3 class="tl-title">SMPN 31 Surabaya</h3>
+                            <p class="tl-level">Sekolah Menengah Pertama</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="tl-icon"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="tl-card">
+                            <span class="tl-year">2022 – 2025</span>
+                            <h3 class="tl-title">SMAS Wachid Hasyim 1 Surabaya</h3>
+                            <p class="tl-level">Sekolah Menengah Atas</p>
+                            <span class="tl-badge">Matematika & IPA</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="tl-icon active"><i class="fa-solid fa-flask"></i></div>
+                        <div class="tl-card active">
+                            <span class="tl-year">2025 – Sekarang</span>
+                            <h3 class="tl-title">Politeknik Perkapalan Negeri Surabaya</h3>
+                            <p class="tl-level">D4 Teknik Pengolahan Limbah</p>
+                            <span class="tl-badge active">Aktif</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. ORGANISASI -->
+        <section class="org section" id="org">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Pengalaman</span>
+                    <h2 class="section-title gradient-text">Organisasi</h2>
+                </div>
+
+                <div class="org-card fade-in">
+                    <div class="org-icon-wrap">
+                        <i class="fa-solid fa-people-group"></i>
+                    </div>
+                    <div class="org-body">
+                        <div class="org-meta">
+                            <span class="org-year"><i class="fa-regular fa-calendar"></i>&nbsp;2026 – Sekarang</span>
+                            <span class="org-badge">Aktif</span>
+                        </div>
+                        <h3 class="org-name">Dewan Perwakilan Mahasiswa</h3>
+                        <p class="org-institute">PPNS — Komisi 5</p>
+                        <p class="org-desc">
+                            Bertanggung jawab dalam <em>controlling</em> BEM PPNS khususnya pada bidang
+                            eksternal, kominfo, administrasi dan kesekretariatan.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. SKILL -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Kemampuan</span>
+                    <h2 class="section-title gradient-text">Skill</h2>
+                </div>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon"><i class="fa-solid fa-drafting-compass"></i></div>
+                        <h4 class="skill-name">AutoCAD</h4>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85"></div>
+                        </div>
+                        <span class="skill-pct">70%</span>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon"><i class="fa-brands fa-figma"></i></div>
+                        <h4 class="skill-name">Canva Design</h4>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="90"></div>
+                        </div>
+                        <span class="skill-pct">90%</span>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h4 class="skill-name">Sketching</h4>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="80"></div>
+                        </div>
+                        <span class="skill-pct">70%</span>
+                    </div>
+
+                    <div class="skill-card fade-in">
+                        <div class="skill-icon"><i class="fa-brands fa-windows"></i></div>
+                        <h4 class="skill-name">Microsoft Excel</h4>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="88"></div>
+                        </div>
+                        <span class="skill-pct">60%</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. KONTAK -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-tag">Hubungi</span>
+                    <h2 class="section-title gradient-text">Kontak Saya</h2>
+                    <p class="section-sub">Jangan ragu untuk menghubungi saya lewat salah satu platform berikut.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <a href="https://wa.me/6282142959422" target="_blank" rel="noopener" class="contact-card fade-in">
+                        <div class="contact-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">WhatsApp</span>
+                            <span class="contact-value">082142959422</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+                    </a>
+
+                    <a href="https://instagram.com/ntsyalyrc" target="_blank" rel="noopener"
+                        class="contact-card fade-in">
+                        <div class="contact-icon instagram"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-value">@ntsyalyrc</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+                    </a>
+
+                    <a href="mailto:natasyaaulia@student.ppns.ac.id" class="contact-card fade-in">
+                        <div class="contact-icon email"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">natasyaaulia@student.ppns.ac.id</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>Designed &amp; Developed by <span class="gradient-text">Natasya Aulia Rachma</span></p>
+        <p class="footer-year">© <span id="year"></span></p>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
